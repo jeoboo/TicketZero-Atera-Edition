@@ -1,0 +1,133 @@
+{
+  "msp_configuration": {
+    "name": "TicketZero MSP Edition",
+    "version": "2.0.0",
+    "max_concurrent_tickets": 50,
+    "default_timeout": 5,
+    "cache_duration_minutes": 5
+  },
+  "clients": [
+    {
+      "client_id": "client_001",
+      "client_name": "Acme Corporation",
+      "atera_api_key": "${ATERA_API_KEY_CLIENT_001}",
+      "ai_provider": "lmstudio",
+      "response_timeout": 5,
+      "escalation_threshold": 2,
+      "business_hours": {
+        "start": "08:00",
+        "end": "18:00",
+        "timezone": "America/New_York"
+      },
+      "sla_targets": {
+        "initial_response_seconds": 30,
+        "resolution_target_minutes": 15,
+        "escalation_target_minutes": 30
+      },
+      "billing": {
+        "tier": "premium",
+        "rate_per_ticket": 2.50,
+        "monthly_minimum": 500
+      }
+    },
+    {
+      "client_id": "client_002",
+      "client_name": "TechStart Solutions",
+      "atera_api_key": "${ATERA_API_KEY_CLIENT_002}",
+      "ai_provider": "azure",
+      "response_timeout": 3,
+      "escalation_threshold": 1,
+      "business_hours": {
+        "start": "09:00",
+        "end": "17:00",
+        "timezone": "America/Pacific"
+      },
+      "sla_targets": {
+        "initial_response_seconds": 60,
+        "resolution_target_minutes": 30,
+        "escalation_target_minutes": 60
+      },
+      "billing": {
+        "tier": "standard",
+        "rate_per_ticket": 1.75,
+        "monthly_minimum": 200
+      }
+    },
+    {
+      "client_id": "client_003",
+      "client_name": "Global Enterprises Inc",
+      "atera_api_key": "${ATERA_API_KEY_CLIENT_003}",
+      "ai_provider": "openai",
+      "response_timeout": 3,
+      "escalation_threshold": 3,
+      "business_hours": {
+        "start": "07:00",
+        "end": "19:00",
+        "timezone": "America/Eastern"
+      },
+      "sla_targets": {
+        "initial_response_seconds": 15,
+        "resolution_target_minutes": 10,
+        "escalation_target_minutes": 20
+      },
+      "billing": {
+        "tier": "enterprise",
+        "rate_per_ticket": 3.00,
+        "monthly_minimum": 1000
+      }
+    }
+  ],
+  "ai_providers": {
+    "lmstudio": {
+      "endpoint": "http://localhost:1234/v1",
+      "model": "phi-3-mini-4k-instruct",
+      "max_tokens": 150,
+      "temperature": 0.3,
+      "timeout": 5
+    },
+    "azure": {
+      "endpoint": "${AZURE_OPENAI_ENDPOINT}",
+      "api_key": "${AZURE_OPENAI_API_KEY}",
+      "deployment": "${AZURE_OPENAI_DEPLOYMENT}",
+      "model": "gpt-3.5-turbo",
+      "max_tokens": 150,
+      "temperature": 0.3,
+      "timeout": 5
+    },
+    "openai": {
+      "api_key": "${OPENAI_API_KEY}",
+      "model": "gpt-3.5-turbo",
+      "max_tokens": 150,
+      "temperature": 0.3,
+      "timeout": 5
+    }
+  },
+  "escalation_rules": {
+    "infrastructure": {
+      "keywords": ["server", "domain", "infrastructure", "network"],
+      "specialist": "Level 2 Infrastructure Team",
+      "priority": "high"
+    },
+    "licensing": {
+      "keywords": ["license", "enterprise", "admin console", "activation"],
+      "specialist": "Software Licensing Specialist",
+      "priority": "medium"
+    },
+    "security": {
+      "keywords": ["security", "policy", "permissions", "access"],
+      "specialist": "Security Team",
+      "priority": "high"
+    },
+    "hardware": {
+      "keywords": ["hardware", "printer", "monitor", "device"],
+      "specialist": "Hardware Support Team",
+      "priority": "medium"
+    }
+  },
+  "performance_thresholds": {
+    "response_time_warning": 3,
+    "response_time_critical": 10,
+    "resolution_rate_target": 75,
+    "escalation_rate_max": 30
+  }
+}

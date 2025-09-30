@@ -1,0 +1,244 @@
+{
+  "universal_configuration": {
+    "name": "TicketZero Universal AI",
+    "version": "3.0.0",
+    "supported_industries": ["msp", "hospitality", "enterprise", "healthcare", "education", "retail"],
+    "max_concurrent_tickets": 100,
+    "default_timeout": 5
+  },
+  "clients": [
+    {
+      "client_id": "msp_001",
+      "client_name": "TechFlow MSP Solutions",
+      "industry_type": "msp",
+      "active": true,
+      "configuration": {
+        "atera_api_key": "${ATERA_API_KEY_TECHFLOW}",
+        "ai_provider": "azure",
+        "response_timeout": 5,
+        "escalation_threshold": 2,
+        "business_hours": {
+          "start": "08:00",
+          "end": "18:00",
+          "timezone": "America/New_York"
+        },
+        "sla_targets": {
+          "initial_response_seconds": 30,
+          "resolution_target_minutes": 15
+        },
+        "billing": {
+          "tier": "professional",
+          "rate_per_ticket": 2.50
+        }
+      }
+    },
+    {
+      "client_id": "hotel_001",
+      "client_name": "Grand Paradise Resort & Spa",
+      "industry_type": "hospitality",
+      "active": true,
+      "configuration": {
+        "property_id": "GRANDPAR001",
+        "property_code": "GRAND",
+        "opera_server_url": "https://opera-api.grandparadise.com",
+        "opera_username": "${OPERA_USERNAME_GRAND}",
+        "opera_password": "${OPERA_PASSWORD_GRAND}",
+        "interface_id": "TICKETZERO_AI",
+        "resort_code": "GRAND",
+        "room_count": 450,
+        "languages": ["en", "es", "fr"],
+        "departments": {
+          "front_desk": "Front Office",
+          "housekeeping": "Housekeeping",
+          "maintenance": "Engineering",
+          "it": "Information Technology",
+          "guest_services": "Guest Relations"
+        },
+        "escalation_matrix": {
+          "maintenance": "engineering@grandparadise.com",
+          "guest_services": "guestrelations@grandparadise.com",
+          "it": "it@grandparadise.com"
+        }
+      }
+    },
+    {
+      "client_id": "enterprise_001",
+      "client_name": "MegaCorp Industries",
+      "industry_type": "enterprise",
+      "active": true,
+      "configuration": {
+        "goto_client_id": "${GOTO_CLIENT_ID_MEGACORP}",
+        "goto_client_secret": "${GOTO_CLIENT_SECRET_MEGACORP}",
+        "goto_api_key": "${GOTO_API_KEY_MEGACORP}",
+        "employee_count": 5000,
+        "departments": ["IT", "HR", "Finance", "Operations", "Sales", "Marketing"],
+        "support_tiers": {
+          "level_1": "general_support@megacorp.com",
+          "level_2": "senior_support@megacorp.com",
+          "level_3": "engineering@megacorp.com"
+        },
+        "escalation_matrix": {
+          "IT": "it_manager@megacorp.com",
+          "HR": "hr_director@megacorp.com",
+          "Finance": "finance_director@megacorp.com"
+        },
+        "remote_support_enabled": true,
+        "compliance_required": true
+      }
+    },
+    {
+      "client_id": "healthcare_001",
+      "client_name": "Central Medical Center",
+      "industry_type": "healthcare",
+      "active": true,
+      "configuration": {
+        "facility_type": "hospital",
+        "bed_count": 200,
+        "departments": ["Emergency", "ICU", "Surgery", "Radiology", "Laboratory", "IT"],
+        "compliance_standards": ["HIPAA", "HITECH"],
+        "critical_systems": ["EMR", "PACS", "Laboratory", "Pharmacy"],
+        "escalation_matrix": {
+          "critical": "it_emergency@centralmed.com",
+          "emr_issues": "emr_support@centralmed.com",
+          "network": "network_admin@centralmed.com"
+        },
+        "sla_targets": {
+          "critical_systems": 5,
+          "general_support": 30,
+          "non_urgent": 120
+        }
+      }
+    },
+    {
+      "client_id": "education_001",
+      "client_name": "State University",
+      "industry_type": "education",
+      "active": true,
+      "configuration": {
+        "institution_type": "university",
+        "student_count": 25000,
+        "faculty_count": 1500,
+        "departments": ["Academic Affairs", "Student Services", "IT Services", "Facilities"],
+        "systems": ["LMS", "SIS", "Library", "Email", "WiFi"],
+        "support_hours": {
+          "academic_year": "24/7",
+          "summer": "08:00-17:00"
+        },
+        "escalation_matrix": {
+          "lms_issues": "lms_admin@stateuniv.edu",
+          "sis_issues": "sis_admin@stateuniv.edu",
+          "network": "network@stateuniv.edu"
+        }
+      }
+    },
+    {
+      "client_id": "retail_001",
+      "client_name": "RetailChain Stores",
+      "industry_type": "retail",
+      "active": true,
+      "configuration": {
+        "store_count": 150,
+        "pos_system": "Square",
+        "inventory_system": "NetSuite",
+        "departments": ["Store Operations", "IT", "Loss Prevention", "Facilities"],
+        "critical_systems": ["POS", "Inventory", "Security", "WiFi"],
+        "escalation_matrix": {
+          "pos_issues": "pos_support@retailchain.com",
+          "inventory": "inventory_support@retailchain.com",
+          "security": "security@retailchain.com"
+        },
+        "sla_targets": {
+          "pos_down": 5,
+          "inventory_issues": 15,
+          "general_support": 60
+        }
+      }
+    }
+  ],
+  "industry_templates": {
+    "msp": {
+      "common_issues": ["email_problems", "vpn_issues", "software_installation", "printer_problems", "network_connectivity"],
+      "typical_resolution_time": 15,
+      "escalation_rate": 25,
+      "automation_rate": 75
+    },
+    "hospitality": {
+      "common_issues": ["wifi_problems", "tv_issues", "room_maintenance", "guest_complaints", "housekeeping_requests"],
+      "typical_resolution_time": 20,
+      "escalation_rate": 15,
+      "automation_rate": 85
+    },
+    "enterprise": {
+      "common_issues": ["software_support", "hardware_issues", "account_access", "training_requests", "system_outages"],
+      "typical_resolution_time": 25,
+      "escalation_rate": 35,
+      "automation_rate": 65
+    },
+    "healthcare": {
+      "common_issues": ["emr_issues", "network_problems", "device_connectivity", "software_support", "security_alerts"],
+      "typical_resolution_time": 10,
+      "escalation_rate": 45,
+      "automation_rate": 55
+    },
+    "education": {
+      "common_issues": ["lms_problems", "email_issues", "wifi_connectivity", "software_licensing", "classroom_tech"],
+      "typical_resolution_time": 30,
+      "escalation_rate": 30,
+      "automation_rate": 70
+    },
+    "retail": {
+      "common_issues": ["pos_problems", "inventory_sync", "wifi_issues", "printer_problems", "security_system"],
+      "typical_resolution_time": 12,
+      "escalation_rate": 20,
+      "automation_rate": 80
+    }
+  },
+  "ai_providers": {
+    "azure": {
+      "endpoint": "${AZURE_OPENAI_ENDPOINT}",
+      "api_key": "${AZURE_OPENAI_API_KEY}",
+      "deployment": "${AZURE_OPENAI_DEPLOYMENT}",
+      "model": "gpt-3.5-turbo",
+      "max_tokens": 200,
+      "temperature": 0.3
+    },
+    "openai": {
+      "api_key": "${OPENAI_API_KEY}",
+      "model": "gpt-3.5-turbo",
+      "max_tokens": 200,
+      "temperature": 0.3
+    },
+    "lmstudio": {
+      "endpoint": "http://localhost:1234/v1",
+      "model": "phi-3-mini-4k-instruct",
+      "max_tokens": 150,
+      "temperature": 0.3
+    }
+  },
+  "pricing_tiers": {
+    "starter": {
+      "monthly_fee": 1500,
+      "tickets_included": 500,
+      "overage_rate": 2.00,
+      "industries": ["msp", "retail"]
+    },
+    "professional": {
+      "monthly_fee": 2000,
+      "tickets_included": 1000,
+      "overage_rate": 1.75,
+      "industries": ["msp", "hospitality", "education"]
+    },
+    "enterprise": {
+      "monthly_fee": 4000,
+      "tickets_included": 2500,
+      "overage_rate": 1.50,
+      "industries": ["enterprise", "healthcare"]
+    },
+    "custom": {
+      "monthly_fee": "negotiated",
+      "tickets_included": "unlimited",
+      "overage_rate": 0,
+      "industries": ["all"]
+    }
+  }
+}

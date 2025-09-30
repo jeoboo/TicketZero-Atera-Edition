@@ -1,0 +1,1082 @@
+[
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "STARTING COMPREHENSIVE LIVE ATERA WORKFLOW TEST",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "Test Configuration: 30-minute timeout per ticket, Full conversation simulation",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "Atera API: https://app.atera.com/api/v3",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "LM Studio: http://127.0.0.1:1234/v1",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "Testing Atera API connectivity...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "Atera API connection successful",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "Fetching live tickets from Atera...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "ATERA",
+    "message": "Retrieved 3 live tickets",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "Found 3 tickets for testing",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "=== TESTING TICKET 1 OF 3 ===",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "Starting full conversation test for Ticket #25: Outlook issue",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:08",
+    "speaker": "SYSTEM",
+    "message": "Fetching details for ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:09",
+    "speaker": "ATERA",
+    "message": "Retrieved ticket details: Outlook issue",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:09",
+    "speaker": "AI",
+    "message": "Hello! I've reviewed your ticket and I'm here to help resolve this issue.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:09",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:39",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:39",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:39",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:41",
+    "speaker": "USER",
+    "message": "It's still not working. Should I restart my computer?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:41",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:41",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: Simulated User Response: It's still not working. Should I restart my computer?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:03:44",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:12",
+    "speaker": "SYSTEM",
+    "message": "LM Studio response received",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:12",
+    "speaker": "AI",
+    "message": "As an IT support technician, it seems the issue might be related to Outlook settings rather than needing a system reboot. Firstly, let's ensure that your Outlook is up-to-date and there are no known issues affecting its functionality. Could you please check for any available updates or patches? Additionally, can you verify if the problem persists across different email accounts within Outlook to rule out account-specific settings as a cause? If these steps don't resolve the issue, we may need more details on the error messages shown and your current browser version. Please let me know what steps have been taken so far or any specific error messages you might be encountering for further assistance. Avoid restarting the computer unless it's part of troubleshooting guidelines suggested by our IT policies, as we want to pinpoint the exact cause first.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:12",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:12",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: TicketZero AI: As an IT support technician, it seems the issue might be related to Outlook settings rather than needing a system reboot. Firstly, let's ensure that your Outlook is up-to-date and there are no known issues affecting its functionality. Could you please check for any available updates or patches? Additionally, can you verify if the problem persists across different email accounts within Outlook to rule out account-specific settings as a cause? If these steps don't resolve the issue, we may need more details on the error messages shown and your current browser version. Please let me know what steps have been taken so far or any specific error messages you might be encountering for further assistance. Avoid restarting the computer unless it's part of troubleshooting guidelines suggested by our IT policies, as we want to pinpoint the exact cause first.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:15",
+    "speaker": "USER",
+    "message": "That helped a little but the problem is still there. Any other ideas?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:15",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:15",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: Simulated User Response: That helped a little but the problem is still there. Any other ideas?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:18",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:48",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:48",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:48",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:51",
+    "speaker": "USER",
+    "message": "The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:51",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:51",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: Simulated User Response: The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:04:54",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:05:24",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:05:24",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:05:24",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:05:27",
+    "speaker": "USER",
+    "message": "I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:05:27",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:05:27",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: Simulated User Response: I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:05:30",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:00",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:00",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:00",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:03",
+    "speaker": "USER",
+    "message": "The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:03",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:03",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: Simulated User Response: The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:06",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:36",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:36",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:36",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:39",
+    "speaker": "USER",
+    "message": "I'm not very technical - could you walk me through that step by step?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:39",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:39",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: Simulated User Response: I'm not very technical - could you walk me through that step by step?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:06:42",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:12",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:12",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:12",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:15",
+    "speaker": "USER",
+    "message": "That helped a little but the problem is still there. Any other ideas?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:15",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:15",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: Simulated User Response: That helped a little but the problem is still there. Any other ideas?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:18",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:48",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:48",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 25",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:48",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 25: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:49",
+    "speaker": "SYSTEM",
+    "message": "Conversation completed for ticket 25. Duration: 280.9 seconds, Rounds: 8",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:54",
+    "speaker": "SYSTEM",
+    "message": "=== TESTING TICKET 2 OF 3 ===",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:54",
+    "speaker": "SYSTEM",
+    "message": "Starting full conversation test for Ticket #24: Outlook Issue",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:54",
+    "speaker": "SYSTEM",
+    "message": "Fetching details for ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:55",
+    "speaker": "ATERA",
+    "message": "Retrieved ticket details: Outlook Issue",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:55",
+    "speaker": "AI",
+    "message": "Hello! I've reviewed your ticket and I'm here to help resolve this issue.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:07:55",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:08:25",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:08:25",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:08:25",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:08:27",
+    "speaker": "USER",
+    "message": "It's still not working. Should I restart my computer?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:08:27",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:08:27",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: Simulated User Response: It's still not working. Should I restart my computer?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:08:30",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:00",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:00",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:00",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:03",
+    "speaker": "USER",
+    "message": "The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:03",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:03",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: Simulated User Response: The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:06",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:36",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:36",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:36",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:39",
+    "speaker": "USER",
+    "message": "I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:39",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:39",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: Simulated User Response: I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:09:42",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:12",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:12",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:12",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:15",
+    "speaker": "USER",
+    "message": "I'm not very technical - could you walk me through that step by step?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:15",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:15",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: Simulated User Response: I'm not very technical - could you walk me through that step by step?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:18",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:48",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:48",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:48",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:51",
+    "speaker": "USER",
+    "message": "The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:51",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:51",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: Simulated User Response: The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:10:54",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:11:24",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:11:24",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:11:24",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:11:27",
+    "speaker": "USER",
+    "message": "That helped a little but the problem is still there. Any other ideas?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:11:27",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:11:27",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: Simulated User Response: That helped a little but the problem is still there. Any other ideas?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:11:30",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:00",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:00",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:00",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:03",
+    "speaker": "USER",
+    "message": "I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:03",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:03",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: Simulated User Response: I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:06",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:36",
+    "speaker": "AI",
+    "message": "I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:36",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 24",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:36",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 24: TicketZero AI: I'll help you with your email issue. Can you tell me: 1) What error message are you seeing? 2) Are you able to send emails, receive emails, or neither? 3) When did this issue start? This will help me provide the right solution.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:37",
+    "speaker": "SYSTEM",
+    "message": "Conversation completed for ticket 24. Duration: 282.7 seconds, Rounds: 8",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:42",
+    "speaker": "SYSTEM",
+    "message": "=== TESTING TICKET 3 OF 3 ===",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:42",
+    "speaker": "SYSTEM",
+    "message": "Starting full conversation test for Ticket #23: New Hire ",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:42",
+    "speaker": "SYSTEM",
+    "message": "Fetching details for ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:42",
+    "speaker": "ATERA",
+    "message": "Retrieved ticket details: New Hire ",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:42",
+    "speaker": "AI",
+    "message": "Hello! I've reviewed your ticket and I'm here to help resolve this issue.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:12:42",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:12",
+    "speaker": "AI",
+    "message": "I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:12",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:12",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: TicketZero AI: I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:14",
+    "speaker": "USER",
+    "message": "That helped a little but the problem is still there. Any other ideas?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:14",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:14",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: Simulated User Response: That helped a little but the problem is still there. Any other ideas?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:17",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:47",
+    "speaker": "AI",
+    "message": "I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:47",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:47",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: TicketZero AI: I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:50",
+    "speaker": "USER",
+    "message": "I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:50",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:50",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: Simulated User Response: I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:13:53",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:14:23",
+    "speaker": "AI",
+    "message": "I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:14:23",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:14:23",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: TicketZero AI: I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:14:26",
+    "speaker": "USER",
+    "message": "I'm not very technical - could you walk me through that step by step?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:14:26",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:14:26",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: Simulated User Response: I'm not very technical - could you walk me through that step by step?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:14:29",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:00",
+    "speaker": "AI",
+    "message": "I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:00",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:00",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: TicketZero AI: I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:03",
+    "speaker": "USER",
+    "message": "I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:03",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:03",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: Simulated User Response: I tried that but it didn't work. What else can I try?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:06",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:36",
+    "speaker": "AI",
+    "message": "I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:36",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:36",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: TicketZero AI: I've reviewed your ticket about 'New Hire '. To provide the best help, could you give me a bit more detail about: 1) What exactly is happening? 2) What error messages do you see? 3) When did this start? I'm here to help resolve this for you!",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:39",
+    "speaker": "USER",
+    "message": "The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:39",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:39",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: Simulated User Response: The error message now says something different. What does that mean?",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:15:42",
+    "speaker": "SYSTEM",
+    "message": "AI processing ticket information...",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:11",
+    "speaker": "SYSTEM",
+    "message": "LM Studio response received",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:11",
+    "speaker": "AI",
+    "message": "As an IT support technician, I understand you're encountering an unexpected error after modifying the ticket information for creating a new hire profile for John Smith. To assist you effectively, could you please provide me with the following details:\n\n1. The exact nature of the error message that has appeared. Including any specific text or codes would be helpful.\n2. Any changes made to the ticket before encountering this issue (e.g., modifications in formatting tags like `<h6>`, adding new attributes).\n3. Whether you're using a web form, custom coding, or another method for updating this information.\n4. The context of where this error is being displayed \u2013 on the user interface, backend server logs, or within any development environment tools (like a text editor or IDE).\n\nThese details will help me understand what might be causing the discrepancy and guide us toward resolving it efficiently.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:11",
+    "speaker": "SYSTEM",
+    "message": "Adding comment to ticket 23",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:11",
+    "speaker": "ATERA",
+    "message": "[SIMULATED] Comment added to ticket 23: TicketZero AI: As an IT support technician, I understand you're encountering an unexpected error after modifying the ticket information for creating a new hire profile for John Smith. To assist you effectively, could you please provide me with the following details:\n\n1. The exact nature of the error message that has appeared. Including any specific text or codes would be helpful.\n2. Any changes made to the ticket before encountering this issue (e.g., modifications in formatting tags like `<h6>`, adding new attributes).\n3. Whether you're using a web form, custom coding, or another method for updating this information.\n4. The context of where this error is being displayed \u2013 on the user interface, backend server logs, or within any development environment tools (like a text editor or IDE).\n\nThese details will help me understand what might be causing the discrepancy and guide us toward resolving it efficiently.",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:11",
+    "speaker": "SYSTEM",
+    "message": "ERROR processing ticket 23: [Errno 22] Invalid argument",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:16",
+    "speaker": "SYSTEM",
+    "message": "=== TEST SUMMARY ===",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:16",
+    "speaker": "SYSTEM",
+    "message": "Total Test Duration: 788.0 seconds",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:16",
+    "speaker": "SYSTEM",
+    "message": "Tickets Processed: 3",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:16",
+    "speaker": "SYSTEM",
+    "message": "Successful Tests: 2",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:16",
+    "speaker": "SYSTEM",
+    "message": "Success Rate: 66.7%",
+    "ticket_id": null
+  },
+  {
+    "timestamp": "12:16:16",
+    "speaker": "SYSTEM",
+    "message": "Total Conversation Entries: 179",
+    "ticket_id": null
+  }
+]
