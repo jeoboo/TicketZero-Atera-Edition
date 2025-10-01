@@ -472,12 +472,19 @@ async def demo_opera_integration():
     """Demo Opera PMS integration"""
 
     # Sample property configuration
+    # Get credentials from environment (no defaults for security)
+    opera_username = os.environ.get('OPERA_USERNAME')
+    opera_password = os.environ.get('OPERA_PASSWORD')
+
+    if not opera_username or not opera_password:
+        raise ValueError("OPERA_USERNAME and OPERA_PASSWORD environment variables are required")
+
     property_config = OperaProperty(
         property_id="HOTEL001",
         property_name="Demo Resort & Spa",
         opera_server_url="https://opera-api.demo-hotel.com",
-        username=os.environ.get('OPERA_USERNAME', 'YOUR_OPERA_USERNAME_HERE'),
-        password=os.environ.get('OPERA_PASSWORD', 'YOUR_OPERA_PASSWORD_HERE'),
+        username=opera_username,
+        password=opera_password,
         interface_id="TICKETZERO_AI",
         resort_code="DEMO"
     )

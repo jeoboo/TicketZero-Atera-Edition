@@ -20,7 +20,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Configuration
-ATERA_API_KEY = os.environ.get('ATERA_API_KEY', 'YOUR_ATERA_API_KEY_HERE')
+ATERA_API_KEY = os.environ.get('ATERA_API_KEY')
+if not ATERA_API_KEY:
+    raise ValueError("ATERA_API_KEY environment variable is required")
 LMSTUDIO_URL = "http://127.0.0.1:1234/v1"
 
 # Import validation utilities

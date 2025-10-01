@@ -543,11 +543,18 @@ Click the link below to join:
 async def demo_goto_integration():
     """Demo GoTo Admin integration"""
 
-    # Sample configuration (would need real credentials)
+    # Get credentials from environment (no defaults for security)
+    goto_client_id = os.environ.get('GOTO_CLIENT_ID')
+    goto_client_secret = os.environ.get('GOTO_CLIENT_SECRET')
+    goto_api_key = os.environ.get('GOTO_API_KEY')
+
+    if not all([goto_client_id, goto_client_secret, goto_api_key]):
+        raise ValueError("GOTO_CLIENT_ID, GOTO_CLIENT_SECRET, and GOTO_API_KEY environment variables are required")
+
     goto_config = GoToAdminConfig(
-        client_id=os.environ.get('GOTO_CLIENT_ID', 'YOUR_GOTO_CLIENT_ID_HERE'),
-        client_secret=os.environ.get('GOTO_CLIENT_SECRET', 'YOUR_GOTO_CLIENT_SECRET_HERE'),
-        api_key=os.environ.get('GOTO_API_KEY', 'YOUR_GOTO_API_KEY_HERE'),
+        client_id=goto_client_id,
+        client_secret=goto_client_secret,
+        api_key=goto_api_key,
         environment="sandbox"
     )
 
