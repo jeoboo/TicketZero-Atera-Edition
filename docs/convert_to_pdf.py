@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 PDF Generation Script for TicketZero AI Documentation
-Converts markdown documents to professional PDF format for presentation to Eddie
+Converts markdown documents to professional PDF format
 """
 
 import os
@@ -210,10 +210,7 @@ def main():
 
     # List of documents to convert
     documents = [
-        ("EXECUTIVE_SUMMARY_FOR_EDDIE.md", "TicketZero_AI_Executive_Summary.pdf"),
-        ("BUSINESS_CASE_FOR_EDDIE.md", "TicketZero_AI_Business_Case.pdf"),
-        ("TECHNICAL_WORKFLOW_DOCUMENTATION.md", "TicketZero_AI_Technical_Documentation.pdf"),
-        ("POWERPOINT_PRESENTATION_OUTLINE.md", "TicketZero_AI_Presentation_Outline.pdf")
+        ("TECHNICAL_WORKFLOW_DOCUMENTATION.md", "TicketZero_AI_Technical_Documentation.pdf")
     ]
 
     print("🚀 Starting PDF generation for TicketZero AI documentation...")
@@ -242,7 +239,7 @@ def main():
             print(f"   • {pdf_file}")
 
     print()
-    print("🎯 Ready for presentation to Eddie!")
+    print("🎯 Ready for presentation!")
 
 if __name__ == "__main__":
     main()
