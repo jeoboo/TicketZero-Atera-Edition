@@ -6,6 +6,7 @@ Multi-industry support: MSP, Hospitality, Enterprise, and more
 
 import asyncio
 import logging
+import os
 from datetime import datetime
 from typing import Dict, List, Optional, Any, Union
 from dataclasses import dataclass
@@ -128,8 +129,8 @@ class UniversalTicketZeroSystem:
                 'configuration': {
                     'property_id': 'GRAND001',
                     'opera_server_url': 'https://opera-api.grandresort.com',
-                    'opera_username': 'api_user',
-                    'opera_password': 'api_pass',
+                    'opera_username': os.getenv('OPERA_USERNAME', 'REPLACE_ME'),
+                    'opera_password': os.getenv('OPERA_PASSWORD', 'REPLACE_ME'),
                     'resort_code': 'GRAND',
                     'interface_id': 'TICKETZERO_AI'
                 }

@@ -116,6 +116,18 @@ python demo/test_azure_graph.py
 - python-dotenv>=1.0.0
 - reportlab>=4.0.0 (for PDF generation)
 - fpdf2>=2.7.0 (for advanced PDF features)
+- cryptography>=41.0.0 (for trial license encryption)
+
+## Security & Configuration
+
+⚠️ **Important Security Notes:**
+- All API credentials must be stored in environment variables
+- Never commit `.env` files or hardcoded credentials to version control
+- Review `trial_license/crypto_utils.py` and update encryption salt before deployment
+- Subprocess calls use `shell=False` to prevent command injection
+- Update placeholder credentials in `src/production/universal_ticketzero_system.py`
+
+See `.env.example` for required environment variables.
 
 ---
 
