@@ -129,8 +129,8 @@ class UniversalTicketZeroSystem:
                 'configuration': {
                     'property_id': 'GRAND001',
                     'opera_server_url': 'https://opera-api.grandresort.com',
-                    'opera_username': os.getenv('OPERA_USERNAME', 'REPLACE_ME'),
-                    'opera_password': os.getenv('OPERA_PASSWORD', 'REPLACE_ME'),
+                    'opera_username': os.getenv('OPERA_USERNAME'),
+                    'opera_password': os.getenv('OPERA_PASSWORD'),
                     'resort_code': 'GRAND',
                     'interface_id': 'TICKETZERO_AI'
                 }
@@ -163,13 +163,21 @@ class UniversalTicketZeroSystem:
         """Initialize industry-specific processor for client"""
 
         if client.industry_type == IndustryType.HOSPITALITY:
+            # Validate required credentials are present
+            opera_username = client.configuration.get('opera_username')
+            opera_password = client.configuration.get('opera_password')
+
+            if not opera_username or not opera_password:
+                logger.error(f"Missing Opera credentials for client {client.client_id}. Set OPERA_USERNAME and OPERA_PASSWORD environment variables.")
+                raise ValueError(f"Opera credentials not configured for {client.client_id}")
+
             # Initialize Opera PMS connector for this property
             opera_config = OperaProperty(
                 property_id=client.configuration['property_id'],
                 property_name=client.client_name,
                 opera_server_url=client.configuration['opera_server_url'],
-                username=client.configuration['opera_username'],
-                password=client.configuration['opera_password'],
+                username=opera_username,
+                password=opera_password,
                 interface_id=client.configuration['interface_id'],
                 resort_code=client.configuration['resort_code']
             )

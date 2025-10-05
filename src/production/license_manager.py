@@ -10,6 +10,7 @@ import hashlib
 import hmac
 import time
 import uuid
+import secrets
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, asdict
@@ -133,18 +134,18 @@ class LicenseManager:
         }
 
     def generate_license_key(self, plan_id: str, customer_name: str, customer_email: str) -> str:
-        """Generate secure license key"""
+        """Generate cryptographically secure license key"""
         plan = self.license_plans.get(plan_id)
         if not plan:
             raise ValueError(f"Invalid plan ID: {plan_id}")
 
-        # Create unique identifier
-        unique_data = f"{customer_email}:{plan_id}:{time.time()}:{uuid.uuid4()}"
+        # Generate cryptographically secure random bytes
+        random_bytes = secrets.token_bytes(8)
 
-        # Create license key hash
-        license_hash = hashlib.sha256(unique_data.encode()).hexdigest()[:16].upper()
+        # Convert to hex for license key segments
+        license_hash = random_bytes.hex().upper()
 
-        # Format as professional license key
+        # Format as professional license key with cryptographically secure random data
         license_key = f"TZ-{plan_id.upper()[:3]}-{license_hash[:4]}-{license_hash[4:8]}-{license_hash[8:12]}-{license_hash[12:16]}"
 
         return license_key
