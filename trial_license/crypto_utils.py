@@ -6,6 +6,7 @@ Uses Fernet symmetric encryption with hardware-derived key
 import hashlib
 import base64
 import json
+import os
 from cryptography.fernet import Fernet
 
 
@@ -31,8 +32,11 @@ class TrialCrypto:
         Returns:
             Encrypted bytes
         """
-        # Use machine ID as part of encryption key
-        salt = "TurtlesAI2025"  # Static salt (change this)
+        # Use environment variable for salt, no fallback for security
+        salt = os.getenv('TRIAL_ENCRYPTION_SALT')
+        if not salt:
+            raise ValueError("TRIAL_ENCRYPTION_SALT environment variable must be set")
+
         key = TrialCrypto._derive_key(machine_id, salt)
 
         cipher = Fernet(key)
@@ -54,7 +58,11 @@ class TrialCrypto:
             Decrypted dict or None if invalid
         """
         try:
-            salt = "TurtlesAI2025"
+            # Use environment variable for salt, no fallback for security
+            salt = os.getenv('TRIAL_ENCRYPTION_SALT')
+            if not salt:
+                raise ValueError("TRIAL_ENCRYPTION_SALT environment variable must be set")
+
             key = TrialCrypto._derive_key(machine_id, salt)
 
             cipher = Fernet(key)
